@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "title": "Laptop",
+    "description": "Potente computadora portátil para todas tus necesidades.",
+    "price": 999.99,
+    "thumbnail": "img/laptop.jpg",
+    "code": "ABC123",
+    "stock": 50
+  },
+  {
+    "id": 2,
+    "title": "PS5",
+    "description": "Consola de última generación para juegos inmersivos.",
+    "price": 499.99,
+    "thumbnail": "img/ps5.jpg",
+    "code": "DEF456",
+    "stock": 20
+  },
+  {
+    "id": 3,
+    "title": "iPhone",
+    "description": "Teléfono inteligente con la última tecnología de Apple.",
+    "price": 899.99,
+    "thumbnail": "img/iphone.jpg",
+    "code": "GHI789",
+    "stock": 30
+  },
+  {
+    "id": 4,
+    "title": "Smart TV",
+    "description": "Televisor inteligente con resolución 4K y funciones avanzadas.",
+    "price": 699.99,
+    "thumbnail": "img/smart_tv.jpg",
+    "code": "JKL123",
+    "stock": 25
+  },
+  {
+    "id": 5,
+    "title": "Cámara DSLR",
+    "description": "Cámara profesional para capturar momentos inolvidables.",
+    "price": 799.99,
+    "thumbnail": "img/camera.jpg",
+    "code": "MNO456",
+    "stock": 15
+  },
+  {
+    "id": 6,
+    "title": "Tablet",
+    "description": "Tableta portátil para entretenimiento y trabajo.",
+    "price": 299.99,
+    "thumbnail": "img/tablet.jpg",
+    "code": "PQR789",
+    "stock": 40
+  },
+  {
+    "id": 7,
+    "title": "Cafetera automática",
+    "description": "Prepara café delicioso con solo presionar un botón.",
+    "price": 129.99,
+    "thumbnail": "img/cafetera.jpg",
+    "code": "STU123",
+    "stock": 30
+  },
+  {
+    "id": 8,
+    "title": "Auriculares inalámbricos",
+    "description": "Sumérgete en un sonido de alta calidad sin cables.",
+    "price": 129.99,
+    "thumbnail": "img/auriculares-wireless.jpg",
+    "code": "VWX456",
+    "stock": 30
+  },
+  {
+    "id": 9,
+    "title": "Altavoz Bluetooth",
+    "description": "Altavoz portátil para tus reuniones y momentos de relajación.",
+    "price": 59.99,
+    "thumbnail": "img/parlante.jpg",
+    "code": "YZA789",
+    "stock": 35
+  },
+  {
+    "id": 10,
+    "title": "Smartwatch",
+    "description": "Reloj inteligente con funciones avanzadas para tu estilo de vida.",
+    "price": 199.99,
+    "thumbnail": "img/smartwatch.jpg",
+    "code": "BCD123",
+    "stock": 25
+  }
+]

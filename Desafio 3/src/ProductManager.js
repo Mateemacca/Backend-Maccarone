@@ -31,6 +31,7 @@ class ProductManager {
                 return [];
         }
     }
+    
 
     async getProductById(id) {
         try {
