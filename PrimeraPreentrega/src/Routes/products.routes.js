@@ -48,10 +48,10 @@ productsRouter.get('/:pid', async (req, res) => {
       if (updatedProduct) {
         res.send(updatedProduct);
       } else {
-        res.status(404).json({ error: 'Producto no encontrado' });
+        res.send({ error: 'Producto no encontrado' });
       }
     } catch (error) {
-      res.status(500).json({ error: 'Error al actualizar el producto' });
+      res.send({ error: 'Error al actualizar el producto' });
     }
   });
   
