@@ -1,0 +1,142 @@
+[
+  {
+    "id": "1",
+    "title": "Laptop Premium",
+    "description": "Potente computadora portátil para todas tus necesidades.",
+    "code": "ABC123",
+    "price": 999.99,
+    "status": true,
+    "stock": 50,
+    "category": "Electrónicos",
+    "thumbnails": [
+      "img/laptop1.jpg",
+      "img/laptop2.jpg"
+    ]
+  },
+  {
+    "id": "2",
+    "title": "PS5",
+    "description": "Consola de última generación para juegos inmersivos.",
+    "code": "DEF456",
+    "price": 499.99,
+    "status": true,
+    "stock": 20,
+    "category": "Videojuegos",
+    "thumbnails": [
+      "img/ps5_1.jpg",
+      "img/ps5_2.jpg"
+    ]
+  },
+  {
+    "id": "3",
+    "title": "iPhone",
+    "description": "Teléfono inteligente con la última tecnología de Apple.",
+    "code": "GHI789",
+    "price": 899.99,
+    "status": true,
+    "stock": 30,
+    "category": "Electrónicos",
+    "thumbnails": [
+      "img/iphone1.jpg",
+      "img/iphone2.jpg"
+    ]
+  },
+  {
+    "id": "4",
+    "title": "Smart TV",
+    "description": "Televisor inteligente con resolución 4K y funciones avanzadas.",
+    "code": "JKL123",
+    "price": 699.99,
+    "status": true,
+    "stock": 25,
+    "category": "Electrónicos",
+    "thumbnails": [
+      "img/smart_tv1.jpg",
+      "img/smart_tv2.jpg"
+    ]
+  },
+  {
+    "id": "5",
+    "title": "Cámara DSLR",
+    "description": "Cámara profesional para capturar momentos inolvidables.",
+    "code": "MNO456",
+    "price": 799.99,
+    "status": true,
+    "stock": 15,
+    "category": "Fotografía",
+    "thumbnails": [
+      "img/camera1.jpg",
+      "img/camera2.jpg"
+    ]
+  },
+  {
+    "id": "6",
+    "title": "Tablet",
+    "description": "Tableta portátil para entretenimiento y trabajo.",
+    "code": "PQR789",
+    "price": 299.99,
+    "status": true,
+    "stock": 40,
+    "category": "Electrónicos",
+    "thumbnails": [
+      "img/tablet1.jpg",
+      "img/tablet2.jpg"
+    ]
+  },
+  {
+    "id": "7",
+    "title": "Cafetera automática",
+    "description": "Prepara café delicioso con solo presionar un botón.",
+    "code": "STU123",
+    "price": 129.99,
+    "status": true,
+    "stock": 30,
+    "category": "Electrodomésticos",
+    "thumbnails": [
+      "img/cafetera1.jpg",
+      "img/cafetera2.jpg"
+    ]
+  },
+  {
+    "id": "8",
+    "title": "Auriculares inalámbricos",
+    "description": "Sumérgete en un sonido de alta calidad sin cables.",
+    "code": "VWX456",
+    "price": 129.99,
+    "status": true,
+    "stock": 30,
+    "category": "Electrónicos",
+    "thumbnails": [
+      "img/auriculares1.jpg",
+      "img/auriculares2.jpg"
+    ]
+  },
+  {
+    "id": "9",
+    "title": "Altavoz Bluetooth",
+    "description": "Altavoz portátil para tus reuniones y momentos de relajación.",
+    "code": "YZA789",
+    "price": 59.99,
+    "status": true,
+    "stock": 35,
+    "category": "Electrónicos",
+    "thumbnails": [
+      "img/altavoz1.jpg",
+      "img/altavoz2.jpg"
+    ]
+  },
+  {
+    "id": "10",
+    "title": "Smartwatch",
+    "description": "Reloj inteligente con funciones avanzadas para tu estilo de vida.",
+    "code": "BCD123",
+    "price": 199.99,
+    "status": true,
+    "stock": 25,
+    "category": "Electrónicos",
+    "thumbnails": [
+      "img/smartwatch1.jpg",
+      "img/smartwatch2.jpg"
+    ]
+  }
+]
