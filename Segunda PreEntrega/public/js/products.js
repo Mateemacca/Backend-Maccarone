@@ -23,7 +23,7 @@ const addProductToCart = async (pid)=>{
     }
 }
 
-for (let btn of btns) {
+for (let btn of addToCartBtns) {
     btn.addEventListener('click', (e) => {
         e.preventDefault(); 
         addProductToCart(btn.id);
