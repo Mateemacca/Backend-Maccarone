@@ -1,0 +1,17 @@
+
+<div>
+    <h1>Lista de productos</h1>
+    <ul>
+        {{#each productos}}
+            <li>
+                <h2>{{title}}</h2>
+                <p>{{description}}</p>
+                <p>Codigo: {{code}}</p>
+                <p>Precio: ${{price}}</p>
+            </li>
+        {{else}}
+            <p>No hay productos disponibles</p>
+        {{/each}}
+    </ul>
+</div>
+
