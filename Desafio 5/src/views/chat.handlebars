@@ -1,8 +1,21 @@
-<div>
-    <h1>CoderChat</h1>
-    <input type="text" id="inputData" />
-    <p id="outputData"></p>
+<link rel="stylesheet" href="css/index.css">
+
+<div class="flex flex-col h-screen">
+    <div class="bg-gray-800 text-white p-4">
+        <h1 class="text-2xl font-bold">CoderChat</h1>
+    </div>
+    <div class="flex-grow bg-gray-600 flex flex-col">
+        <div id="outputData" class="  mb-4 flex-grow overflow-y-auto  max-h-[calc(100vh-10rem)] p-4 overflow-hidden" >
+            <!-- Mensajes aquí -->
+            <!-- ... -->
+        </div>
+        <hr class="text-black">
+        <input type="text" id="inputData" placeholder="Escribe tu mensaje aquí..." class="w-[85%] bg-gray-200 mx-auto my-auto p-2 border border-gray-300 rounded" />
+    </div>
 </div>
+
+
+
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="/socket.io/socket.io.js"></script>
 <script src="js/index.js"></script>

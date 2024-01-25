@@ -1,13 +1,14 @@
-
+<link rel="stylesheet" href="css/index.css">
 <div>
-    <h1>Lista de productos</h1>
+    <h1 class="font-bold text-2xl">Lista de productos</h1>
     <ul>
         {{#each productos}}
-            <li>
-                <h2>{{title}}</h2>
+            <li class="my-4 max-w-lg">
+                <h2 class="font-bold text-xl">{{title}}</h2>
                 <p>{{description}}</p>
-                <p>Codigo: {{code}}</p>
-                <p>Precio: ${{price}}</p>
+                <p>Codigo: <strong>{{code}}</strong></p>
+                <p>Precio: <strong>${{price}}</strong></p>
+                <hr class="w-full">
             </li>
         {{else}}
             <p>No hay productos disponibles</p>
