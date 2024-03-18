@@ -16,9 +16,7 @@ class TicketRepository {
     
         for (const productItem of cart.products) {
             const product = productItem.product;
-            const quantity = productItem.quantity;
-            let productPrice = +product.price;
-           
+            const quantity = productItem.quantity;           
             let productStock = product.stock
             if (productStock >= quantity) {
                 productStock -= quantity;
@@ -41,8 +39,7 @@ class TicketRepository {
 
         const ticket = new ticketModel(ticketData);
         await ticket.save();
-        cart.products = cart.products.filter(item => !failedProducts.includes(item.product._id.toString()));
-        await cart.save();
+        await this.removePurchasedProductsFromCart(cartId, purchasedProducts);
 
         return { ticket, failedProducts };
     }
@@ -67,6 +64,26 @@ class TicketRepository {
         return purchasedProducts.reduce((total, product) => {
             return total + (product.quantity * product.price); 
         }, 0);
+    }
+    async removePurchasedProductsFromCart(cartId, purchasedProducts) {
+        try {
+            const cart = await cartModel.findById(cartId);
+            
+            if (!cart) {
+                throw new Error('Carrito no encontrado');
+            }
+    
+            //todas las id de productos comprados
+            const purchasedProductIds = purchasedProducts.map(product => product.product.toString());
+    
+            cart.products = cart.products.filter(item => {
+                return !purchasedProductIds.includes(item.product.toString());
+            });
+            await cart.save();
+
+        } catch (error) {
+            console.error('Error al eliminar productos comprados del carrito:', error);
+        }
     }
 }
 
