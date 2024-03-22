@@ -6,8 +6,14 @@ const customLevelOptions = {
         error: 1,
         warning: 2,
         info: 3,
-        http: 4,
-        debug: 5
+        debug: 4
+    },
+    colors: {
+        fatal: 'red',
+        error: 'magenta',
+        warning: 'yellow',
+        info: 'blue',
+        debug: 'white'
     }
 }
 
@@ -24,7 +30,11 @@ const productionLogger = winston.createLogger({
     levels: customLevelOptions.levels,
     transports: [
         new winston.transports.Console({
-            level: "info"
+            level: "info",
+            format: winston.format.combine(
+                winston.format.colorize({colors: customLevelOptions.colors}),
+                winston.format.simple()
+            )
         }),
         new winston.transports.File({
             level: "error",
