@@ -4,6 +4,8 @@ import { userModel } from "../dao/models/user.model.js";
 import { createHash, isValidPassword } from "../utils/bcrypt.js";
 import { Strategy as GithubStrategy } from "passport-github2";
 import mongoose from "mongoose";
+import CustomErrors from '../services/errors/CustomErrors.js'
+import {userNotFound} from '../services/errors/info.js'
 import config from "./config.js";
 const ObjectId = mongoose.Types.ObjectId;
 
@@ -50,7 +52,12 @@ const initializePassport = () =>{
         
                 const user = await userModel.findOne({email:username});
                 if(!user){
-                    console.log('User does not exist');
+                    CustomErrors.createError({
+                        name: 'User not found',
+                        cause: userNotFound(),
+                        message: 'User not found',
+                        code: ErrorEnum.USER_NOT_FOUND
+                    });
                     return done(null,false)
                 }
                 if(!isValidPassword(user,password)){
