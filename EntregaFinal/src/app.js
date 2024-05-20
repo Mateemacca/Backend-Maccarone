@@ -30,7 +30,7 @@ import userRoutes from "./routes/users.routes.js";
 
 const app = express();
 const fileStore = FileStore(session);
-const PORT = config.port;
+const PORT = config.port || 8080;
 
 const specs = swaggerJSDoc(swaggerConfiguration);
 app.use("/apidocs", swaggerUIExpress.serve, swaggerUIExpress.setup(specs));
